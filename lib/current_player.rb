@@ -1,5 +1,9 @@
 def turn_count(board)
-  board.count{|move| move == "X" || move == "0"}
-  turn = 0
-  board.each {|move| if move == "X" || move == "0" turn += 1 }
+board.count{|token| token == "X" || token == "O"}
+
+turns = 0
+board.each do |token|
+if token == "X" || token == "O"
+turns += 1
+end
 end
