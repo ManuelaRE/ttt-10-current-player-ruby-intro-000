@@ -1,7 +1,6 @@
-def turn_count
-  board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
-  counter = 0
-  board.each{|position|
-    position.count
-    counter += 1}
+def turn_count(board)
+  board.count{|move| move == "X" || move == "0"}
+  move = 0
+board.each {|move|}
+
 end
